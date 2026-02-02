@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   // Track current theme
   int _currentThemeIndex = 0;
-  
+
   // Define your preset themes
   final List<ThemeData> _themes = [
     ThemeData(
@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({
-    super.key, 
+    super.key,
     required this.title,
     required this.onThemeSwitch,
   });
@@ -94,7 +94,6 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-<<<<<<< HEAD
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -108,8 +107,6 @@ class _MyHomePageState extends State<MyHomePage> {
           // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
           // action in the IDE, or press "p" in the console), to see the
           // wireframe for each widget.
-=======
->>>>>>> 10ad532b59cf4807476010afa5339865d323155a
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Your custom Card replaces the counter text here
@@ -166,3 +163,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
