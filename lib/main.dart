@@ -142,6 +142,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            ListView.builder(
+              shrinkWrap: true,
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  leading: Icon(Icons.star, color: Colors.amber),
+                  title: Text('Item ${index + 1}'),
+                  subtitle: Text('Description for item ${index + 1}'),
+                  trailing: Icon(Icons.arrow_forward_ios),
+                );
+              },
+            ),
           ],
         ),
       ),
